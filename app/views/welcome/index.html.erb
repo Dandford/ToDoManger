@@ -1,0 +1,18 @@
+<% provide(:title, "Welcome") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+  </head>
+  <body>
+  	<div class="center jumbotron">
+  <h1>Welcome to the To-Do-Manager!</h1>
+
+  <h2>A convenient application to help you remember important deadlines!</h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+	<%= image_tag("To.do.png", alt: "To Do Logo") %>
+	
+  </body>
